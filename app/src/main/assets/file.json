@@ -1,0 +1,16 @@
+{
+  "farmers": [
+    {
+      "name": "John Doe",
+      "phone": "123-456-7890",
+      "address": "123 Main St, City, Country",
+      "upi_id": "john.doe@upi"
+    },
+    {
+      "name": "Jane Smith",
+      "phone": "987-654-3210",
+      "address": "456 Elm St, Town, Country",
+      "upi_id": "jane.smith@upi"
+    }
+  ]
+}

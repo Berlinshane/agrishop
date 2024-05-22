@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.agrishop">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Agrishop"
+        tools:targetApi="31">
+        <activity
+            android:name=".FarmerInfoActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MediaRecord"
+            android:exported="false" />
+        <activity
+            android:name=".AwarenessSong"
+            android:exported="false" />
+        <activity
+            android:name=".Hardware"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD3t4mfJNy9NxxVKT4J_T47soKBgCRUTO4" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BlogActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".AirplaneModeReceiver"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".FarmersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayBlogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" /> <!-- Activities -->
+        <activity
+            android:name=".SMSsender"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupChatAdapter"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".NotificationDismissReceiver"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ReverseGeocoderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeatherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NextActivity"
+            android:exported="true" />
+        <activity android:name=".FertilizerDetailsActivity" />
+        <activity
+            android:name=".VegetablesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FruitsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PesticidesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LiveMarketActivity"
+            android:exported="true" /> <!-- Receivers -->
+        <receiver
+            android:name=".SmsSentReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="SMS_SENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".SMSSenderReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="SEND_SMS" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SMSSenderBroadcastReceiver" />
+        <receiver
+            android:name=".AirplaneModeReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

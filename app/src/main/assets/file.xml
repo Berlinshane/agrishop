@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<records>
+    <farmer>
+        <name>Sachin Kumar</name>
+        <phone>1234567890</phone>
+        <address>123 Main Street, Cityville</address>
+        <upi_id>sachin@example.com</upi_id>
+    </farmer>
+    <farmer>
+        <name>Rahul Kumar</name>
+        <phone>9876543210</phone>
+        <address>456 Elm Street, Townsville</address>
+        <upi_id>rahul@example.com</upi_id>
+    </farmer>
+    <farmer>
+        <name>John Mike</name>
+        <phone>5551234567</phone>
+        <address>789 Oak Street, Villageton</address>
+        <upi_id>john@example.com</upi_id>
+    </farmer>
+</records>

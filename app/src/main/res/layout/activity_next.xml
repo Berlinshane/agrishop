@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/agri_shop_image"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/verticalContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/welcomeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Welcome to Agri-Shop!"
+                android:textColor="#FF4081"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/widget1"
+                style="@style/WidgetButtonStyle"
+                android:text="Home"
+                android:layout_width="200dp"
+                android:layout_height="80dp"/>
+
+            <Button
+                android:id="@+id/widget2"
+                style="@style/WidgetButtonStyle"
+                android:text="Vegetables"
+                android:layout_width="200dp"
+                android:layout_height="80dp"/>
+
+            <Button
+                android:id="@+id/widget3"
+                style="@style/WidgetButtonStyle"
+                android:text="Fruits"
+                android:layout_width="200dp"
+                android:layout_height="80dp"/>
+
+            <Button
+                android:id="@+id/widget4"
+                style="@style/WidgetButtonStyle"
+                android:text="Live market price"
+                android:layout_width="200dp"
+                android:layout_height="80dp"/>
+
+            <Button
+                android:id="@+id/widget5"
+                style="@style/WidgetButtonStyle"
+                android:text="Weather"
+                android:layout_width="200dp"
+                android:layout_height="80dp"/>
+
+            <Button
+                android:id="@+id/widget6"
+                style="@style/WidgetButtonStyle"
+                android:text="Fertilizers"
+                android:layout_width="200dp"
+                android:layout_height="80dp"/>
+
+            <Button
+                android:id="@+id/widget7"
+                style="@style/WidgetButtonStyle"
+                android:text="Pesticides"
+                android:layout_width="200dp"
+                android:layout_height="80dp"/>
+
+            <Button
+                android:id="@+id/widget8"
+                style="@style/WidgetButtonStyle"
+                android:text="Blog"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:onClick="onCLickBrowser1"
+                />
+
+            <Button
+                android:id="@+id/FarmersButton"
+                style="@style/WidgetButtonStyle"
+                android:text="Farmers"
+                android:layout_width="200dp"
+                android:layout_height="80dp" />
+
+
+            <Button
+                android:id="@+id/vendorInfoButton"
+                style="@style/WidgetButtonStyle"
+                android:text="Vendor Details"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:onClick="onCLickBrowser1"
+                />
+            <Button
+                android:id="@+id/widget10"
+                style="@style/WidgetButtonStyle"
+                android:text="Awareness song"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                />
+            <Button
+                android:id="@+id/widget11"
+                style="@style/WidgetButtonStyle"
+                android:text="Media Recorder"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                />
+            <Button
+                android:id="@+id/widget12"
+                style="@style/WidgetButtonStyle"
+                android:text="Hardware"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                />
+
+            <Button
+                android:id="@+id/SettingsButton"
+                style="@style/WidgetButtonStyle"
+                android:text="Settings"
+                android:layout_width="200dp"
+                android:layout_height="80dp"/>
+
+
+            <Button
+                android:id="@+id/smsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Sms Button"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/notificationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Notification Button"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Notification Button -->
+
+
+</RelativeLayout>

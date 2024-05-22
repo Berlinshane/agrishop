@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fruit_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/apple"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:id="@+id/fruit_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple"
+            android:textSize="20sp"
+            android:layout_below="@id/fruit_image_view"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/fruit_price_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$2.99"
+            android:textSize="18sp"
+            android:layout_below="@id/fruit_name_text_view"
+            android:layout_marginStart="16dp"/>
+
+        <Button
+            android:id="@+id/quantity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Quantity"
+            android:layout_below="@id/fruit_price_text_view"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rotateAnimation"
+        android:title="Rotate Animation"/>
+    <item
+        android:id="@+id/moveAnimation"
+        android:title="Move Animation"/>
+    <item
+        android:id="@+id/slideUpAnimation"
+        android:title="Slide Up Animation"/>
+    <item
+        android:id="@+id/slideDownAnimation"
+        android:title="Slide Down Animation"/>
+    <item
+        android:id="@+id/bounceAnimation"
+        android:title="Bounce Animation"/>
+    <item
+        android:id="@+id/sequentialAnimation"
+        android:title="Sequential Animation"/>
+    <item
+        android:id="@+id/togetherAnimation"
+        android:title="Together Animation"/>
+</menu>

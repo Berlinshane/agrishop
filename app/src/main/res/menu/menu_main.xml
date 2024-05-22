@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_cart"
+        android:title="Cart"
+        android:icon="@drawable/ic_cart"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_sort_by_name"
+        android:title="Sort by Name"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_toggle_bluetooth"
+        android:title="Toggle Bluetooth"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_toggle_wifi"
+        android:title="Toggle WiFi"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_view_wifi"
+        android:title="View WiFi Networks"
+        app:showAsAction="never"/>
+</menu>

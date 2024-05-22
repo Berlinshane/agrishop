@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Set the image as the background -->
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/agri_shop_image"
+        android:scaleType="centerCrop" />
+
+    <!-- Center the layout in the parent -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <!-- Your existing UI elements -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's grow together"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" /> <!-- Change text color to white -->
+
+        <TextView
+            android:id="@+id/textViewSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Farming app"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" /> <!-- Change text color to white -->
+
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSubtitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:text="Get Started"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF5722"
+            android:onClick="onGetStartedClick" /> <!-- Add onClick attribute -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

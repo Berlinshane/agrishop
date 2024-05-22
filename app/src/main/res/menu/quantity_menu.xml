@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_1_kg"
+        android:title="1 kg"/>
+    <item
+        android:id="@+id/action_2_kg"
+        android:title="2 kg"/>
+    <!-- Add more items for other quantities as needed -->
+</menu>

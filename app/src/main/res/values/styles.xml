@@ -1,0 +1,14 @@
+<resources>
+    <style name="WidgetButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:backgroundTint">#2196F3</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Define common attributes for both light and dark modes here -->
+    </style>
+</resources>
